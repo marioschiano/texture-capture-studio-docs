@@ -16,4 +16,3 @@ mkdocs serve
 The documentation site is configured for:
 
 `https://marioschiano.github.io/texture-capture-studio-docs/`
-
