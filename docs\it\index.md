@@ -1,0 +1,40 @@
+# Texture Capture Studio
+
+<span class="te-draft">Bozza documentazione</span>
+
+Estrai texture ad alta risoluzione direttamente dalle fotografie, correggi la prospettiva, genera mappe PBR e crea Trim Sheet o Atlas allineati in Blender.
+
+<div class="te-flow">Foto sorgente → Match Perspective → Estrazione → PBR → Trim / Atlas → Export</div>
+
+## Cosa fa Texture Capture Studio
+
+Texture Capture Studio utilizza i pixel reali dell'immagine sorgente caricata. **Non** cattura la viewport di Blender, quindi la qualità non dipende dalla risoluzione del monitor.
+
+Se un muro occupa 2200 × 1600 pixel in una foto da 8000 × 6000, la texture estratta può conservare circa quel dettaglio anche se la viewport è visualizzata su un monitor 1080p.
+
+## Funzioni principali
+
+- Ricostruzione opzionale della prospettiva a due punti per foto architettoniche.
+- Estrazione con quattro punti tramite correzione prospettica o deformazione tessellata morbida.
+- Gestione di più poligoni e texture estratte.
+- Generazione PBR: Normal, Height, Roughness e Ambient Occlusion.
+- Displacement dalla Height map con configurazione automatica di suddivisione e modificatore Displace.
+- Trim Sheet verticali o orizzontali.
+- Packing automatico pixel-perfect dell'Atlas conservando la densità dei pixel originale.
+- Export di mesh statiche in FBX, OBJ o GLB.
+- Zoom di precisione, snapping, overlay e altri controlli avanzati di disegno.
+
+!!! note "Le mappe PBR sono stime"
+    Le mappe generate da una singola foto a colori sono un'ottima base di lavoro, ma non sono dati fisici misurati. Luci, ombre e riflessi presenti nella fotografia possono influenzare il risultato.
+
+## Compatibilità
+
+Texture Capture Studio richiede **Blender 4.2 o successivo** e si installa come Blender Extension in formato ZIP.
+
+## Inizia da qui
+
+- [Installazione](installation.md)
+- [Guida rapida](quick-start.md)
+- [Workflow completo](workflow.md)
+- [Mappe PBR e displacement](pbr-maps.md)
+- [Trim Sheet e Atlas](trim-atlas.md)

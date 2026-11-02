@@ -1,0 +1,75 @@
+site_name: Texture Capture Studio Documentation
+site_description: Extract perspective-correct textures from photos and create PBR materials, trim sheets, and pixel-perfect atlases in Blender.
+site_url: https://marioschiano.github.io/texture-capture-studio-docs/
+
+theme:
+  name: material
+  language: en
+  icon:
+    alternate: material/earth
+  palette:
+    scheme: slate
+    primary: deep orange
+    accent: orange
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.tooltips
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: it
+          name: Italiano
+          build: true
+          nav_translations:
+            Home: Home
+            Getting Started: Per iniziare
+            Installation: Installazione
+            Quick Start: Guida rapida
+            Workflow: Workflow
+            Complete Workflow: Workflow completo
+            PBR Maps and Displacement: Mappe PBR e displacement
+            Trim Sheet and Atlas: Trim Sheet e Atlas
+            Reference: Riferimento
+            Export and Advanced: Export e Advanced
+            Support: Supporto
+            Changelog: Changelog
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+
+extra_css:
+  - stylesheets/texture-extract.css
+
+extra:
+  alternate:
+    - name: English
+      link: /texture-capture-studio-docs/
+      lang: en
+    - name: Italiano
+      link: /texture-capture-studio-docs/it/
+      lang: it
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: installation.md
+      - Quick Start: quick-start.md
+  - Workflow:
+      - Complete Workflow: workflow.md
+      - PBR Maps and Displacement: pbr-maps.md
+      - Trim Sheet and Atlas: trim-atlas.md
+  - Reference:
+      - Export and Advanced: export-advanced.md
+  - Support:
+      - Changelog: changelog.md
