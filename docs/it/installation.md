@@ -14,9 +14,9 @@ Texture Capture Studio viene distribuito come Blender Extension installabile in 
 3. Apri il menu in alto a destra e scegli **Install from Disk**.
 4. Seleziona lo ZIP di Texture Capture Studio.
 5. Conferma l'installazione e attiva l'estensione se Blender lo richiede.
-6. Nella 3D View premi `N` e apri la scheda **Texture Capture**.
+6. Nella 3D View premi `N` e apri la scheda **Texture Capture Studio**.
 
-Nel titolo del pannello viene mostrata la versione installata, per esempio **Texture Capture Studio v0.3.20**.
+Nel titolo del pannello viene mostrata la versione installata, per esempio **Texture Capture Studio v0.3.128**. Questa guida fa riferimento alla versione 0.3.128.
 
 ## Aggiornamento
 

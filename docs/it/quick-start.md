@@ -3,14 +3,14 @@
 Questo esempio estrae una superficie rigida e piana, come un muro di mattoni.
 
 1. Apri **1. Source Photo** e premi **Load Photo**.
-2. Scegli la cartella di output e il nome della texture.
-3. Per la prima estrazione manuale lascia disattivato **2. Match Perspective**.
-4. In **3. Extract Textures** scegli **Perspective Correct**.
-5. Premi **New Points** e posiziona quattro punti intorno al muro.
-6. Se necessario correggi gli angoli con **Edit Points**.
-7. Premi **Extract Perspective Texture**.
-8. Apri **3B. Extracted Textures** per controllare il risultato ad alta risoluzione.
-9. Usa **Create Material** per creare e assegnare un materiale Blender.
+2. Per la prima estrazione lascia disattivato **2. Match Perspective**: non è obbligatorio per catturare una texture.
+3. Apri **3. Capture**, scegli **Texture** e imposta **Extraction Method** su **Perspective Correct**.
+4. Premi **New Points** e posiziona quattro punti lungo il contorno del muro, seguendone il perimetro.
+5. Se necessario correggi gli angoli con **Edit Points**.
+6. In **3. Capture**, scegli **Output Folder** e **Texture Name**, quindi premi **Extract Perspective Texture**.
+7. Apri **Extracted Textures** e controlla la texture risultante. Se vuoi creare un materiale, seleziona la texture e usa **Create Material From Selected**.
+
+La cattura usa i pixel della fotografia originale, non uno screenshot della viewport. La correzione prospettica può ricampionare l'immagine: la proporzione reale della superficie non è sempre ricavabile con precisione dalla sola foto. Per controllarla usa **Target UV Ratio**, descritto nel [workflow completo](workflow.md).
 
 ## Aggiungere le mappe PBR
 

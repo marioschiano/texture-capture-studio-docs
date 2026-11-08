@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">Schema delle guide prospettiche</title><desc id="desc">Un edificio schematico con due linee rosse X, due verdi Y e due blu Z lungo i bordi.</desc>
+  <rect width="900" height="430" rx="18" fill="#202935"/>
+  <text x="35" y="42" fill="#fff" font-family="sans-serif" font-size="21">Guide su bordi paralleli nel mondo reale</text>
+  <path d="M 170 143 L 365 75 L 700 157 L 700 333 L 365 293 L 170 330 Z" fill="#526779" stroke="#94a5b1" stroke-width="2"/>
+  <path d="M 365 75 L 365 293" stroke="#b0bbc3" stroke-width="2"/>
+  <path d="M 170 143 L 365 75 M 170 330 L 365 293" stroke="#fa5151" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 365 75 L 700 157 M 365 293 L 700 333" stroke="#56d982" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 170 143 L 170 330 M 700 157 L 700 333" stroke="#5da7ff" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#fff" font-family="sans-serif" font-size="19"><text x="50" y="400" fill="#fa7777">X · 2 guide</text><text x="300" y="400" fill="#75eba0">Y · 2 guide</text><text x="560" y="400" fill="#83bcff">Z · 2 guide</text></g>
+</svg>

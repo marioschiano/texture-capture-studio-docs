@@ -4,6 +4,10 @@
 
 La sezione **5. Trim Sheet** combina le texture estratte in un'unica immagine. Dalla versione 0.3.127 puoi creare fasce orizzontali che occupano l'intera larghezza UV, utili per materiali come cornici, mattoni e rivestimenti.
 
+![Schema di una fascia UV e della sua ripetizione orizzontale](images/trim-ripetizione.svg)
+
+*Schema illustrativo: ogni fascia occupa tutta la larghezza e può essere ripetuta sui lati.*
+
 ### Creare fasce orizzontali
 
 1. Estrai dalla foto le texture che vuoi utilizzare.

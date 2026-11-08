@@ -14,12 +14,14 @@ Se un muro occupa 2200 × 1600 pixel in una foto da 8000 × 6000, la texture est
 
 ## Funzioni principali
 
-- Ricostruzione opzionale della prospettiva a due punti per foto architettoniche.
-- Estrazione con quattro punti tramite correzione prospettica o deformazione tessellata morbida.
+- Ricostruzione opzionale della prospettiva a due o tre punti per foto architettoniche.
+- Estrazione con quattro punti tramite correzione prospettica, proiezione tessellata o proiezione dalla camera.
+- Creazione di box e piani prospettici e trasferimento della foto alle facce compatibili, anche di un cubo Blender.
 - Gestione di più poligoni e texture estratte.
 - Generazione PBR: Normal, Height, Roughness e Ambient Occlusion.
 - Displacement dalla Height map con configurazione automatica di suddivisione e modificatore Displace.
 - Trim Sheet con fasce orizzontali U 0–1, seamless e anteprima della ripetizione; è disponibile anche la composizione precedente.
+- Anteprima e creazione di texture seamless, con controlli per maschera e sfumatura.
 - Packing automatico pixel-perfect dell'Atlas conservando la densità dei pixel originale.
 - Export di mesh statiche in FBX, OBJ o GLB.
 - Zoom di precisione, snapping, overlay e altri controlli avanzati di disegno.
