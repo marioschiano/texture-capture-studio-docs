@@ -63,6 +63,8 @@ La Height map generata può deformare realmente la geometria:
 
 Su un muro di mattoni, mattoni e fughe possono acquistare una profondità visibile. La qualità dipende dalla densità della mesh e da quanto la foto permette di distinguere il rilievo reale dall'illuminazione.
 
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: displacement</strong><span>Confronto reale della stessa mesh prima e dopo Apply Height Displacement, vista anche di lato.</span></div>
+
 !!! note
     Da una sola fotografia non è sempre possibile distinguere geometria, colore dipinto, ombre e riflessi. Regola i valori prima di applicare una suddivisione pesante.
 
@@ -70,5 +72,4 @@ Su un muro di mattoni, mattoni e fughe possono acquistare una profondità visibi
 
 Quando le mappe PBR esistono, i nuovi Trim Sheet e Atlas riutilizzano lo stesso layout per Base Color, Normal, Height, Roughness e AO. Tutte le mappe restano così allineate alle stesse coordinate UV.
 
-!!! info "Immagine da aggiungere — mappe PBR"
-    Inserire un esempio reale della stessa texture con Base Color, Normal, Height, Roughness e AO generate dall'addon, etichettate e affiancate.
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: mappe PBR</strong><span>Base Color, Normal, Height, Roughness e AO della stessa texture, generate dall'addon e affiancate.</span></div>

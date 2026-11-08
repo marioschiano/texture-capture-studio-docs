@@ -40,6 +40,10 @@ plugins:
             Export and Advanced: Export e Advanced
             Support: Supporto
             Changelog: Changelog
+            FAQ: FAQ
+            Troubleshooting: Risoluzione problemi
+            Contact Support: Contatta il supporto
+            Video Tutorials: Video tutorial
 
 markdown_extensions:
   - admonition
@@ -75,3 +79,7 @@ nav:
       - Export and Advanced: export-advanced.md
   - Support:
       - Changelog: changelog.md
+      - FAQ: /texture-capture-studio-docs/it/faq/
+      - Troubleshooting: /texture-capture-studio-docs/it/troubleshooting/
+      - Contact Support: /texture-capture-studio-docs/it/support/
+      - Video Tutorials: /texture-capture-studio-docs/it/video-tutorials/

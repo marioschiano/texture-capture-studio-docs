@@ -54,8 +54,7 @@ Attiva **Make Seamless X** per sfumare la giunzione tra il bordo sinistro e quel
 
 Premi **Create Live Seamless Preview** per confrontare le fasce ripetute tre volte: **prima** in alto e **dopo** in basso. Dopo aver creato l'anteprima, il controllo **Live Preview** permette di aggiornare il confronto quando cambi le impostazioni. Controlla visivamente la giunzione: a seconda della foto possono restare ripetizioni evidenti, ombre o discontinuità.
 
-!!! info "Immagine da aggiungere — anteprima seamless"
-    Inserire una schermata reale dell'anteprima con le tre ripetizioni prima e dopo la sfumatura, evidenziando le giunzioni.
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: anteprima seamless</strong><span>Schermata reale con le tre ripetizioni prima e dopo la sfumatura, evidenziando le giunzioni.</span></div>
 
 L'anteprima serve per la verifica: premi comunque **Build Trim Sheet** per generare la trim definitiva nella cartella di output. Se esistono le corrispondenti mappe PBR, i risultati usano lo stesso layout della Base Color.
 
@@ -103,6 +102,8 @@ Opzioni:
 - **Atlas Padding**: spazio intorno alle regioni impacchettate.
 
 L'operazione crea una collection dedicata **Texture Capture Studio - Atlas**. Mesh e materiali sono copie indipendenti; gli oggetti originali mantengono UV, materiali e texture.
+
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: atlas automatico</strong><span>Mesh selezionate prima del packing e atlas risultante con le isole UV organizzate.</span></div>
 
 !!! important
     Il packing automatico conserva la densità dei pixel. Se le regioni non entrano nella dimensione massima senza ridimensionamento, occorre usare un Atlas più grande oppure meno regioni sorgente.

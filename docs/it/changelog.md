@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.130
+
+- Modifica l'allineamento dei titoli numerati nella sidebar.
+
+## 0.3.129
+
+- Uniforma la disposizione dei titoli e delle icone delle sezioni.
+- Rimuove la dicitura “Optional” dai titoli Match Perspective e Generate PBR; i passaggi restano facoltativi.
+
 ## 0.3.128
 
 - Aggiunge **Mirror & Blend** come alternativa a Edge Blend per le fasce seamless orizzontali.
@@ -24,4 +33,4 @@
 
 ## Stato della documentazione
 
-Questa è la prima bozza bilingue. Verranno aggiunti screenshot, esempi animati, risoluzione dei problemi e il riferimento completo di tutte le impostazioni mentre il workflow dell'addon viene consolidato.
+La documentazione italiana include schermate dell'interfaccia e segnaposto per ulteriori esempi reali. Le informazioni sulle versioni tra quelle elencate non costituiscono ancora uno storico completo.

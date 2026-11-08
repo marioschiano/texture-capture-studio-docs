@@ -72,3 +72,7 @@ Texture Capture Studio richiede **Blender 4.2 o successivo** e si installa come 
 - [Workflow completo](workflow.md)
 - [Mappe PBR e displacement](pbr-maps.md)
 - [Trim Sheet e Atlas](trim-atlas.md)
+- [Domande frequenti](faq.md)
+- [Risoluzione problemi](troubleshooting.md)
+- [Contatta il supporto](support.md)
+- [Video tutorial](video-tutorials.md)

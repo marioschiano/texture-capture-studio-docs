@@ -52,6 +52,9 @@ html[lang="it"] .md-typeset h2 ~ h2 { border-top: 1px solid var(--te-border); pa
 .md-typeset .te-ui-image img { max-width: 100%; height: auto; border-radius: 5px; }
 .md-typeset .te-ui-image p { margin: 0; }
 .md-typeset .te-ui-image small { display: block; opacity: .75; margin-top: .4rem; }
+.md-typeset .te-image-placeholder { display: flex; min-height: 150px; flex-direction: column; align-items: center; justify-content: center; gap: .45rem; margin: 1.5rem 0; padding: 1.5rem; border: 2px dashed var(--te-border); border-radius: 8px; background: var(--te-panel); text-align: center; }
+.md-typeset .te-image-placeholder strong { color: var(--te-accent); }
+.md-typeset .te-image-placeholder span { max-width: 42rem; opacity: .8; font-size: .9em; }
 @media (max-width: 600px) { .md-typeset .te-ui-image { flex-basis: 100%; } }
 .sr-lightbox-trigger{cursor:zoom-in}
 html.sr-lightbox-open,body.sr-lightbox-open{overflow:hidden;height:100%;overscroll-behavior:none} .sr-lightbox{touch-action:none}

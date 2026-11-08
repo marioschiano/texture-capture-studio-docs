@@ -57,8 +57,7 @@ Usa questa fase se vuoi ricostruire la prospettiva della foto per modellare geom
 
 **Auto Detect Guides** propone un posizionamento automatico: verifica sempre le linee sulla foto e correggile prima del solve. Per ripartire usa **Clear All Guides**.
 
-!!! info "Immagine da aggiungere — guide sulla foto"
-    Inserire una schermata reale di Blender con una foto caricata, le due guide X, le due Y e le due Z visibili, insieme ai controlli di Match Perspective aperti.
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: guide sulla foto</strong><span>Schermata reale di Blender con le due guide X, Y e Z e i controlli Match Perspective aperti.</span></div>
 
 In **Advanced → Perspective Mode**, **2-Point Perspective** è il valore predefinito ed è adatto a foto con verticali approssimativamente parallele. **3-Point Perspective** considera anche la convergenza verticale: usa due linee per ciascuno degli assi X, Y e Z. Tre punti di fuga non significano tre linee per asse.
 
@@ -67,6 +66,8 @@ In **Advanced → Perspective Mode**, **2-Point Perspective** è il valore prede
 Dopo il solve puoi usare **Create Box** oppure creare un piano con **Auto Plane**, **Ground**, **Front** o **Side**. Durante la creazione si impostano le dimensioni progressivamente; **Extrude** aggiunge un passaggio per la profondità e **Snapping** abilita l'aggancio. Con un oggetto dell'addon selezionato puoi regolare **Wireframe**, **Wire Opacity** e **Base Opacity**. In Advanced sono disponibili anche i controlli di visibilità delle facce posteriori per i box compatibili.
 
 La precisione della ricostruzione dipende dalla qualità delle guide e dalle ipotesi geometriche: controlla l'allineamento sulla foto e non considerare le dimensioni fisiche assolute automaticamente misurate.
+
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: geometria prospettica</strong><span>Un box o due piani creati sulla foto, con snapping lungo uno spigolo dell'edificio.</span></div>
 
 ## 3. Capture → Texture
 
@@ -96,6 +97,8 @@ Le righe con icona informativa sono messaggi di stato, non pulsanti. La schermat
 </div>
 
 Premi **New Points** e indica quattro angoli consecutivi dell'area. Usa **Edit Points** per correggerli; nella modalità **Polygons** puoi gestire le aree già create. **Aligned Rectangle** permette invece di definire un rettangolo con due angoli.
+
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: selezione e cattura</strong><span>Foto reale con i quattro punti sulla superficie e, accanto, la texture rettangolare estratta dall'addon.</span></div>
 
 ### Extraction Method
 
@@ -128,8 +131,7 @@ La sezione **Polygons** gestisce i poligoni e il trasferimento sulle facce di ge
 
 Per un cubo Blender standard l'addon applica la scala e crea una mappa UV **Photo Transfer** per la proiezione. Verifica il risultato e le facce opposte: la foto contiene solo le informazioni effettivamente visibili, quindi non può ricostruire automaticamente il retro nascosto.
 
-!!! info "Immagine da aggiungere — trasferimento su cubo"
-    Inserire un confronto reale prima/dopo: cubo allineato alla foto e risultato sulle facce visibili, con il pannello Capture → Polygons aperto.
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: trasferimento su cubo</strong><span>Confronto reale prima e dopo: cubo allineato alla foto e texture applicata alle facce visibili, con Capture → Polygons aperto.</span></div>
 
 ## Extracted Textures e Make Seamless
 
@@ -179,6 +181,8 @@ In **Extracted Textures** puoi selezionare e visualizzare i risultati, eliminarl
 1. Seleziona la texture e regola **Edge Blend Width**, **Noise Scale**, **Warp Strength**, **Seed** e, se necessario, **Sharpen**.
 2. Premi **Create Live Seamless Preview** per verificare il risultato. Dopo la creazione puoi aprire **Edit Mask in Image Editor** per intervenire sulla maschera.
 3. Premi **Bake Seamless Texture** per creare il risultato. In alternativa usa **Quick Edge Blend** per una sfumatura rapida e **Preview 3 x 3** per controllare la ripetizione.
+
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: seamless di una texture</strong><span>Confronto reale della texture singola ripetuta prima e dopo il bake seamless, con giunzioni visibili.</span></div>
 
 Questi controlli lavorano su una singola texture; le opzioni per le fasce orizzontali sono nella pagina [Trim Sheet e Atlas](trim-atlas.md).
 
