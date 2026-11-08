@@ -18,7 +18,7 @@ Texture Capture Studio viene distribuito come Blender Extension installabile in 
 
 <div class="te-image-placeholder"><strong>Immagine da aggiungere: installazione</strong><span>Schermata reale di Blender con Install from Disk e la selezione dello ZIP dell'estensione.</span></div>
 
-Nel titolo del pannello viene mostrata la versione installata, per esempio **Texture Capture Studio v0.3.130**. Le schermate attuali di questa guida fanno riferimento alla versione 0.3.130.
+Nel titolo del pannello viene mostrata la versione installata, per esempio **Texture Capture Studio v0.3.132**. Le schermate possono mostrare versioni precedenti; la pagina workflow indica da quale versione sono disponibili le funzioni più recenti.
 
 ## Aggiornamento
 

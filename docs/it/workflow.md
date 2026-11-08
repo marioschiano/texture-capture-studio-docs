@@ -1,6 +1,6 @@
 # Workflow completo
 
-Questa guida descrive il workflow di Texture Capture Studio; le schermate dell'interfaccia sono della versione 0.3.130. Match Perspective e le fasi PBR sono opzionali: per estrarre una porzione di foto puoi passare direttamente da **Source Photo** a **Capture**.
+Questa guida descrive il workflow di Texture Capture Studio. Le schermate mostrano versioni diverse dell'interfaccia; Clean Lighting e Advanced Retouch sono disponibili rispettivamente dalla 0.3.131 e dalla 0.3.132. Match Perspective e le fasi PBR sono opzionali: per estrarre una porzione di foto puoi passare direttamente da **Source Photo** a **Capture**.
 
 ## 1. Source Photo
 
@@ -133,7 +133,7 @@ Per un cubo Blender standard l'addon applica la scala e crea una mappa UV **Phot
 
 <div class="te-image-placeholder"><strong>Immagine da aggiungere: trasferimento su cubo</strong><span>Confronto reale prima e dopo: cubo allineato alla foto e texture applicata alle facce visibili, con Capture → Polygons aperto.</span></div>
 
-## Extracted Textures e Make Seamless
+## Extracted Textures, Clean Lighting e Make Seamless
 
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
@@ -152,6 +152,43 @@ Per un cubo Blender standard l'addon applica la scala e crea una mappa UV **Phot
 
 </div>
 </div>
+
+### Clean Lighting e Advanced Retouch
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+**Clean Lighting** aiuta ad attenuare variazioni generali di luminosità sulla texture selezionata, prima di creare la seamless o le mappe PBR. La correzione è una stima: controlla sempre il risultato.
+
+- **Shadow Reduction**: intensità della correzione delle zone più scure.
+- **Highlight Reduction**: intensità della correzione delle zone più chiare.
+- **Light Balance**: regola la forza complessiva dell'equalizzazione della luce.
+- **Preserve Detail**: riduce l'intervento sui cambiamenti locali per aiutare a conservare i dettagli.
+- **Light Scale**: regola la scala delle variazioni di luce analizzate nell'anteprima; valori più alti considerano zone più ampie.
+- **Create / Refresh Preview**: crea o aggiorna il confronto, con originale a sinistra e risultato a destra. Gli slider aggiornano l'anteprima; dopo aver dipinto la maschera premi di nuovo questo pulsante.
+- **Protect Mask**: apre la maschera nell'Image Editor già presente nell'area di lavoro. Dipingi di **bianco** le zone da proteggere e di **nero** quelle su cui applicare la correzione. Salva o incorpora la maschera se vuoi conservarla nel progetto.
+- **Create Clean Texture**: salva una nuova texture alla risoluzione originale nella cartella di output e la aggiunge alla lista. La texture di partenza non viene modificata.
+- **Edit with Clone**: avvia il ritocco manuale su una copia con il timbro di Blender, descritto sotto.
+
+Per la maschera, se non è già presente un **Image Editor**, aprine uno in Blender prima di premere **Protect Mask**. Ombre molto nette, riflessi e dettagli completamente bruciati possono non essere recuperabili automaticamente.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Clean Lighting con i controlli di correzione e Advanced Retouch](images/clean-lighting.png)
+
+</div>
+</div>
+
+#### Ritocco manuale con il timbro
+
+1. Seleziona la texture da ritoccare nella lista e premi **Edit with Clone**. L'addon crea una copia temporanea e la apre nell'Image Editor con lo strumento Clone.
+2. Sposta la sorgente del timbro con il **tasto destro del mouse**, quindi dipingi con il **sinistro** sulle aree da correggere.
+3. Nell'Image Editor premi **N** se necessario e apri la scheda **Texture Capture Studio**. Usa **Save Retouched Texture** per salvare una nuova texture nella cartella di output oppure **Cancel Retouch** per scartare la copia.
+
+Salva prima di chiudere Blender o cambiare file: la copia di lavoro è temporanea. L'originale rimane invariato. Se avevi già generato mappe PBR, rigenerale dalla texture ritoccata per mantenerle coerenti. Puoi poi controllare il risultato con **Make Seamless**.
+
+<div class="te-image-placeholder"><strong>Immagine da aggiungere: ritocco con Clone</strong><span>Schermata reale dell'Image Editor con il timbro, la sorgente di clonazione e il pannello Save Retouched Texture / Cancel Retouch.</span></div>
 
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">

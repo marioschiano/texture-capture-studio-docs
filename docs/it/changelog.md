@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.132
+
+- Aggiunge **Advanced Retouch** con il timbro Clone nativo di Blender.
+- Permette di salvare una nuova texture ritoccata o annullare la copia di lavoro.
+
+## 0.3.131
+
+- Aggiunge **Clean Lighting** per attenuare variazioni di luce su una copia della texture.
+- Introduce l'anteprima prima/dopo e una maschera opzionale per proteggere alcune aree.
+
 ## 0.3.130
 
 - Modifica l'allineamento dei titoli numerati nella sidebar.
