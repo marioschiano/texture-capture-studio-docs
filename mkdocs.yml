@@ -17,7 +17,6 @@ theme:
 
 plugins:
   - search
-  - glightbox
   - i18n:
       docs_structure: folder
       languages:
@@ -50,6 +49,9 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/texture-extract.css
+
+extra_javascript:
+  - javascripts/image-lightbox.js
 
 extra:
   alternate:
