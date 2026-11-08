@@ -30,9 +30,9 @@ Le righe con l'icona informativa descrivono i valori e l'anteprima: non sono pul
 </div>
 </div>
 
-![Schema di una fascia UV e della sua ripetizione orizzontale](images/trim-ripetizione.svg)
+![Schema della fascia in un quadrato UV 0–1 e della ripetizione su tre quadrati affiancati](images/trim-ripetizione.svg)
 
-*Schema illustrativo: ogni fascia occupa tutta la larghezza e può essere ripetuta sui lati.*
+*Schema illustrativo: la fascia attraversa tutto il quadrato UV da U = 0 a U = 1. Sotto, lo spazio UV è ripetuto tre volte; le linee tratteggiate mostrano dove controllare le giunzioni. La griglia è solo un riferimento visivo.*
 
 ### Creare fasce orizzontali
 
