@@ -52,6 +52,9 @@ html[lang="it"] .md-typeset h2 ~ h2 { border-top: 1px solid var(--te-border); pa
 .md-typeset .te-ui-image img { max-width: 100%; height: auto; border-radius: 5px; }
 .md-typeset .te-ui-image p { margin: 0; }
 .md-typeset .te-ui-image small { display: block; opacity: .75; margin-top: .4rem; }
+.md-typeset .te-pbr-diagram { position: relative; margin: 1.2rem 0; }
+.md-typeset .te-pbr-diagram__schema { width: 100%; aspect-ratio: 1200 / 550; background: url("../it/images/da-diffuse-a-pbr.svg") center / contain no-repeat; }
+.md-typeset .te-pbr-diagram__source { position: absolute; left: 3.333%; top: 33.636%; width: 26.667%; height: 39.091%; object-fit: cover; border-radius: 4px; }
 .md-typeset .te-image-placeholder { display: flex; min-height: 150px; flex-direction: column; align-items: center; justify-content: center; gap: .45rem; margin: 1.5rem 0; padding: 1.5rem; border: 2px dashed var(--te-border); border-radius: 8px; background: var(--te-panel); text-align: center; }
 .md-typeset .te-image-placeholder strong { color: var(--te-accent); }
 .md-typeset .te-image-placeholder span { max-width: 42rem; opacity: .8; font-size: .9em; }

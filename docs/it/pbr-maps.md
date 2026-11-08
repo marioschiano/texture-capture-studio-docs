@@ -2,6 +2,13 @@
 
 Texture Capture Studio può ricavare quattro mappe di supporto dalla texture Base Color estratta.
 
+<div class="te-pbr-diagram">
+  <div class="te-pbr-diagram__schema" role="img" aria-label="Schema delle mappe Normal, Height, Roughness e Ambient Occlusion"></div>
+  <img class="te-pbr-diagram__source" src="../images/mattoni-basecolor.png" alt="Esempio di texture Base Color di mattoni realistici">
+</div>
+
+*La texture di partenza è un'immagine fotorealistica generata con IA. Le mappe a destra sono disegni schematici, non mappe realmente prodotte da questa texture: l'addon le stima dalla Base Color.*
+
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 

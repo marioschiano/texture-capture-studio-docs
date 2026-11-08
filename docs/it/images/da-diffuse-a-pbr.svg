@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" role="img" aria-labelledby="title desc">
+<title id="title">Dalla Base Color alle mappe PBR</title><desc id="desc">Una texture di mattoni a colori porta a quattro esempi illustrativi di mappe Normal, Height, Roughness e Ambient Occlusion.</desc>
+<defs>
+  <pattern id="brick" width="100" height="62" patternUnits="userSpaceOnUse"><rect width="100" height="62" fill="#554236"/><path d="M4 4H96V27H4ZM4 35H46V58H4ZM54 35H96V58H54Z" fill="#b36c4f"/><path d="M8 7H91M8 38H42M58 38H92" stroke="#d89d7a" stroke-width="3" opacity=".7"/></pattern>
+  <pattern id="normal" width="100" height="62" patternUnits="userSpaceOnUse"><rect width="100" height="62" fill="#4945b0"/><path d="M4 4H96V27H4ZM4 35H46V58H4ZM54 35H96V58H54Z" fill="#8588ff" stroke="#58c3dc" stroke-width="3"/><path d="M8 25H92M8 56H42M58 56H92" stroke="#db64ca" stroke-width="2"/></pattern>
+  <pattern id="height" width="100" height="62" patternUnits="userSpaceOnUse"><rect width="100" height="62" fill="#333"/><path d="M4 4H96V27H4ZM4 35H46V58H4ZM54 35H96V58H54Z" fill="#c3c3c3" stroke="#777" stroke-width="3"/><path d="M9 9H87M9 40H39M59 40H88" stroke="#e3e3e3" stroke-width="2"/></pattern>
+  <pattern id="rough" width="100" height="62" patternUnits="userSpaceOnUse"><rect width="100" height="62" fill="#aaa"/><path d="M4 4H96V27H4ZM4 35H46V58H4ZM54 35H96V58H54Z" fill="#dedede"/><path d="M10 12H74M15 21H89M9 45H38M59 46H88" stroke="#aaa" stroke-width="3"/></pattern>
+  <pattern id="ao" width="100" height="62" patternUnits="userSpaceOnUse"><rect width="100" height="62" fill="#303030"/><path d="M5 5H95V26H5ZM5 36H45V57H5ZM55 36H95V57H55Z" fill="#eee" stroke="#777" stroke-width="5"/></pattern>
+</defs>
+<rect width="1200" height="550" rx="20" fill="#202935"/>
+<g font-family="Arial,sans-serif" fill="#f4f5f6"><text x="40" y="48" font-size="26" font-weight="bold">Dalla fotografia alle mappe PBR</text><text x="40" y="80" font-size="16" fill="#c4ced8">Rappresentazione illustrativa: le mappe sono stimate dalla texture sorgente.</text>
+<text x="40" y="140" font-size="21" font-weight="bold">Diffuse / Base Color</text><text x="40" y="164" font-size="15" fill="#c4ced8">Texture a colori estratta</text>
+<text x="520" y="140" font-size="20" font-weight="bold">Normal</text><text x="520" y="164" font-size="15" fill="#c4ced8">Dettaglio simulato</text>
+<text x="850" y="140" font-size="20" font-weight="bold">Height</text><text x="850" y="164" font-size="15" fill="#c4ced8">Altezza relativa</text>
+<text x="520" y="351" font-size="20" font-weight="bold">Roughness</text><text x="520" y="375" font-size="15" fill="#c4ced8">Rugosità stimata</text>
+<text x="850" y="351" font-size="20" font-weight="bold">Ambient Occlusion</text><text x="850" y="375" font-size="15" fill="#c4ced8">Cavità stimate</text></g>
+<rect x="40" y="185" width="320" height="215" rx="8" fill="url(#brick)"/>
+<rect x="520" y="180" width="270" height="135" rx="8" fill="url(#normal)"/>
+<rect x="850" y="180" width="270" height="135" rx="8" fill="url(#height)"/>
+<rect x="520" y="390" width="270" height="135" rx="8" fill="url(#rough)"/>
+<rect x="850" y="390" width="270" height="135" rx="8" fill="url(#ao)"/>
+<path d="M380 292H468 M451 275L468 292L451 309" fill="none" stroke="#ff9f43" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
