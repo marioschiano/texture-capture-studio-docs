@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.128
+
+- Aggiunge **Mirror & Blend** come alternativa a Edge Blend per le fasce seamless orizzontali.
+- Usa il metodo scelto sia nell'anteprima prima/dopo sia nella trim definitiva.
+- Gestisce la componente orizzontale delle normal map quando il bordo viene specchiato.
+
+## 0.3.127
+
+- Aggiunge fasce orizzontali a larghezza completa nell'intervallo UV U 0–1.
+- Permette di scegliere le texture da includere e la larghezza della trim.
+- Aggiunge la sfumatura seamless orizzontale e un'anteprima prima/dopo con tre ripetizioni.
+- Mantiene le texture originali e allinea le eventuali mappe PBR allo stesso layout.
+
 ## 0.3.20
 
 - Ricrea il layout Atlas dalle singole isole UV connesse.

@@ -19,7 +19,7 @@ Se un muro occupa 2200 × 1600 pixel in una foto da 8000 × 6000, la texture est
 - Gestione di più poligoni e texture estratte.
 - Generazione PBR: Normal, Height, Roughness e Ambient Occlusion.
 - Displacement dalla Height map con configurazione automatica di suddivisione e modificatore Displace.
-- Trim Sheet verticali o orizzontali.
+- Trim Sheet con fasce orizzontali U 0–1, seamless e anteprima della ripetizione; è disponibile anche la composizione precedente.
 - Packing automatico pixel-perfect dell'Atlas conservando la densità dei pixel originale.
 - Export di mesh statiche in FBX, OBJ o GLB.
 - Zoom di precisione, snapping, overlay e altri controlli avanzati di disegno.
