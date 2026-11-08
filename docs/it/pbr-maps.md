@@ -2,12 +2,9 @@
 
 Texture Capture Studio può ricavare quattro mappe di supporto dalla texture Base Color estratta.
 
-<div class="te-pbr-diagram">
-  <div class="te-pbr-diagram__schema" role="img" aria-label="Schema delle mappe Normal, Height, Roughness e Ambient Occlusion"></div>
-  <img class="te-pbr-diagram__source" src="../images/mattoni-basecolor.png" alt="Esempio di texture Base Color di mattoni realistici">
-</div>
+![Esempio reale di mappe Normal, Height, Roughness e Ambient Occlusion generate dall'addon da una texture di mattoni](images/pbr-mattoni-reali.svg)
 
-*La texture di partenza è un'immagine fotorealistica generata con IA. Le mappe a destra sono disegni schematici, non mappe realmente prodotte da questa texture: l'addon le stima dalla Base Color.*
+*La texture di partenza è un'immagine fotorealistica generata con IA; le quattro mappe sono state generate da quella texture con Texture Capture Studio 0.3.130. Sono stime dalla Base Color, non misurazioni fisiche. Clicca sull'immagine per ingrandirla.*
 
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
@@ -79,4 +76,3 @@ Su un muro di mattoni, mattoni e fughe possono acquistare una profondità visibi
 
 Quando le mappe PBR esistono, i nuovi Trim Sheet e Atlas riutilizzano lo stesso layout per Base Color, Normal, Height, Roughness e AO. Tutte le mappe restano così allineate alle stesse coordinate UV.
 
-<div class="te-image-placeholder"><strong>Immagine da aggiungere: mappe PBR</strong><span>Base Color, Normal, Height, Roughness e AO della stessa texture, generate dall'addon e affiancate.</span></div>
