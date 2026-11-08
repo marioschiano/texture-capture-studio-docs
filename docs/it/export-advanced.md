@@ -2,6 +2,19 @@
 
 ## Export
 
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+In **7. Export** scegli il formato e le opzioni del preset. Nella schermata è selezionato **FBX**: puoi esportare gli oggetti selezionati, applicare i modificatori e gestire triangolazione e trasformazioni.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Export con il preset FBX](images/export.png)
+
+</div>
+</div>
+
 Texture Capture Studio offre un preset per mesh statiche con **FBX** selezionato di default.
 
 | Formato | Opzioni principali |
@@ -13,6 +26,32 @@ Texture Capture Studio offre un preset per mesh statiche con **FBX** selezionato
 Animazioni, camere, luci e armature sono escluse da questo workflow per mesh statiche.
 
 ## Advanced
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+La prima parte di **8. Advanced** raccoglie i controlli per le guide prospettiche, la vista della camera e l'aspetto dei vertici e dei poligoni. La dimensione dei punti può essere regolata in pixel sullo schermo oppure rispetto al mondo 3D.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Impostazioni Advanced per guide e Selection Overlay](images/advanced-overlay.png)
+
+</div>
+</div>
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+Nella parte successiva trovi **Snapping**, la sensibilità di **Automatic Guides** e il **Precision Magnifier**. Puoi abilitare separatamente gli agganci e modificarne le distanze; lo zoom di precisione dispone di ingrandimento, rallentamento, mirino e griglia pixel.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Impostazioni Snapping, Automatic Guides e Precision Magnifier](images/advanced-snapping.png)
+
+</div>
+</div>
 
 Le impostazioni avanzate sono separate dal workflow principale per non confondere l'utente medio.
 

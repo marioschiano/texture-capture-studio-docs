@@ -43,3 +43,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+.md-typeset .te-ui-row { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; margin: 1.2rem 0 1.8rem; }
+.md-typeset .te-ui-text { flex: 1 1 280px; min-width: 0; }
+.md-typeset .te-ui-text > :first-child { margin-top: 0; }
+.md-typeset .te-ui-image { flex: 0 1 240px; max-width: 100%; text-align: center; }
+.md-typeset .te-ui-image img { max-width: 100%; height: auto; border-radius: 5px; }
+.md-typeset .te-ui-image p { margin: 0; }
+.md-typeset .te-ui-image small { display: block; opacity: .75; margin-top: .4rem; }
+@media (max-width: 600px) { .md-typeset .te-ui-image { flex-basis: 100%; } }

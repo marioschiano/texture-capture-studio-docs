@@ -12,12 +12,12 @@ theme:
     primary: deep orange
     accent: orange
   features:
-    - navigation.sections
     - navigation.top
     - content.tooltips
 
 plugins:
   - search
+  - glightbox
   - i18n:
       docs_structure: folder
       languages:

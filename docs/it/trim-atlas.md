@@ -4,6 +4,19 @@
 
 La sezione **5. Trim Sheet** combina le texture estratte in un'unica immagine. Dalla versione 0.3.127 puoi creare fasce orizzontali che occupano l'intera larghezza UV, utili per materiali come cornici, mattoni e rivestimenti.
 
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+Con **Horizontal Bands · Full Width 0–1** attivo, scegli la larghezza e le texture, quindi regola **Make Seamless X**. L'anteprima mostra la ripetizione; **Build Trim Sheet** genera il risultato nella cartella indicata. Nella schermata non ci sono ancora texture nella lista.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Trim Sheet con le fasce orizzontali](images/trim-sheet.png)
+
+</div>
+</div>
+
 ![Schema di una fascia UV e della sua ripetizione orizzontale](images/trim-ripetizione.svg)
 
 *Schema illustrativo: ogni fascia occupa tutta la larghezza e può essere ripetuta sui lati.*
@@ -38,6 +51,19 @@ L'anteprima serve per la verifica: premi comunque **Build Trim Sheet** per gener
 Disattiva **Horizontal Bands · Full Width 0–1** per usare la composizione precedente. In questa modalità **Vertical Trim Sheet** cambia l'orientamento della composizione e **Trim Padding** imposta lo spazio tra le regioni.
 
 ## Modalità Atlas
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+Nel pannello **6. Atlas** scegli tra **Automatic — Preserve Resolution** e **Manual Grid**. La modalità automatica offre controlli per padding, dimensione massima, rotazione delle isole e bake della Base Color.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Atlas in modalità automatica](images/atlas.png)
+
+</div>
+</div>
 
 ### Automatic — Preserve Resolution
 

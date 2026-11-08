@@ -2,6 +2,19 @@
 
 Texture Capture Studio può ricavare quattro mappe di supporto dalla texture Base Color estratta.
 
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+Apri **4. Generate PBR**, premi **Enable PBR Generation** e scegli le mappe da generare. I gruppi **Normal / Height** e **Surface** regolano il risultato; in basso trovi anche i controlli per il displacement. Nella schermata i controlli sono disattivati perché la generazione non è ancora stata abilitata.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Generate PBR con le impostazioni disattivate](images/generate-pbr.png)
+
+</div>
+</div>
+
 ## Mappe disponibili
 
 | Mappa | Funzione |

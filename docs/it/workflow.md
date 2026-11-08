@@ -1,14 +1,40 @@
 # Workflow completo
 
-Questa guida descrive l'interfaccia di Texture Capture Studio 0.3.128. Match Perspective e le fasi PBR sono opzionali: per estrarre una porzione di foto puoi passare direttamente da **Source Photo** a **Capture**.
+Questa guida descrive il workflow di Texture Capture Studio; le schermate dell'interfaccia sono della versione 0.3.130. Match Perspective e le fasi PBR sono opzionali: per estrarre una porzione di foto puoi passare direttamente da **Source Photo** a **Capture**.
 
 ## 1. Source Photo
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+**Load Photo** apre la scelta dell'immagine sorgente. Una volta caricata, la foto diventa il riferimento per la cattura e per l'eventuale ricostruzione prospettica.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Source Photo con il pulsante Load Photo](images/source-photo.png)
+
+</div>
+</div>
 
 Premi **Load Photo** e scegli la fotografia. Per rimuoverla usa il cestino accanto al nome. **Lock Camera View**, in Advanced, mantiene la vista dedicata al lavoro sulla foto; disattivalo quando vuoi navigare liberamente nella scena.
 
 La cattura usa l'immagine originale, non la risoluzione dello schermo. La dimensione dell'output dipende dalla porzione selezionata e dal metodo di estrazione: la correzione prospettica può interpolare i pixel e non può ricostruire dettagli assenti nella foto.
 
-## 2. Match Perspective — opzionale
+## 2. Match Perspective
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+**Enable Perspective Match** attiva i controlli per disegnare le guide. Carica prima una fotografia: la schermata a destra mostra lo stato iniziale, quando non è ancora stata scelta.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Match Perspective prima del caricamento della foto](images/match-perspective.png)
+
+</div>
+</div>
 
 Usa questa fase se vuoi ricostruire la prospettiva della foto per modellare geometrie allineate o stimare le proporzioni di una superficie. Non è necessaria per una semplice cattura 2D.
 
@@ -33,6 +59,19 @@ Dopo il solve puoi usare **Create Box** oppure creare un piano con **Auto Plane*
 La precisione della ricostruzione dipende dalla qualità delle guide e dalle ipotesi geometriche: controlla l'allineamento sulla foto e non considerare le dimensioni fisiche assolute automaticamente misurate.
 
 ## 3. Capture → Texture
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+Nella modalità **Texture**, **New Points** avvia la selezione e **Edit Points** permette di correggerla. Più in basso scegli metodo, proporzioni, cartella e nome, poi premi **Extract Perspective Texture**. La schermata mostra il pannello prima di caricare una foto: alcuni messaggi sono abbreviati per la larghezza della sidebar.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Pannello Capture nella modalità Texture](images/capture.png)
+
+</div>
+</div>
 
 Premi **New Points** e indica quattro angoli consecutivi dell'area. Usa **Edit Points** per correggerli; nella modalità **Polygons** puoi gestire le aree già create. **Aligned Rectangle** permette invece di definire un rettangolo con due angoli.
 
@@ -68,6 +107,32 @@ La sezione **Polygons** gestisce i poligoni e il trasferimento sulle facce di ge
 Per un cubo Blender standard l'addon applica la scala e crea una mappa UV **Photo Transfer** per la proiezione. Verifica il risultato e le facce opposte: la foto contiene solo le informazioni effettivamente visibili, quindi non può ricostruire automaticamente il retro nascosto.
 
 ## Extracted Textures e Make Seamless
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+La lista raccoglie le texture estratte; i pulsanti laterali aiutano a eliminare o gestire i risultati. **Purge Unused Generated Data** pulisce i dati generati non più utilizzati, senza eliminare i file salvati su disco.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Lista Extracted Textures vuota e comando di pulizia](images/extracted-textures.png)
+
+</div>
+</div>
+
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+In **Make Seamless** regoli la sfumatura, il rumore e la deformazione. Avvia l'anteprima, controlla la ripetizione e, quando il risultato ti convince, esegui il bake. **Preview 3 x 3** aiuta a individuare le giunzioni.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Controlli Make Seamless per la singola texture](images/make-seamless.png)
+
+</div>
+</div>
 
 In **Extracted Textures** puoi selezionare e visualizzare i risultati, eliminarli, pulire i dati generati inutilizzati e creare un materiale. Per una singola texture, apri **Make Seamless**:
 

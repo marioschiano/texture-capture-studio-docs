@@ -6,6 +6,22 @@ Estrai texture ad alta risoluzione direttamente dalle fotografie, correggi la pr
 
 <div class="te-flow">Foto sorgente → Match Perspective → Estrazione → PBR → Trim / Atlas → Export</div>
 
+<div class="te-ui-row" markdown="1">
+<div class="te-ui-text" markdown="1">
+
+## Il pannello dell'addon
+
+Nella viewport 3D premi **N** e apri **Texture Capture Studio**. Le sezioni seguono le fasi del lavoro: puoi aprire solo quelle che ti servono. Clicca sulle immagini di questa guida per ingrandirle.
+
+</div>
+<div class="te-ui-image" markdown="1">
+
+![Interfaccia principale di Texture Capture Studio con le sezioni chiuse](images/interfaccia.png)
+
+<small>Interfaccia della versione 0.3.130.</small>
+</div>
+</div>
+
 ## Cosa fa Texture Capture Studio
 
 Texture Capture Studio utilizza i pixel reali dell'immagine sorgente caricata. **Non** cattura la viewport di Blender, quindi la qualità non dipende dalla risoluzione del monitor.

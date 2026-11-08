@@ -14,7 +14,7 @@ La cattura usa i pixel della fotografia originale, non uno screenshot della view
 
 ## Aggiungere le mappe PBR
 
-1. Apri **4. Generate PBR — Optional**.
+1. Apri **4. Generate PBR**.
 2. Attiva **PBR Generation**.
 3. Seleziona Normal, Height, Roughness e Ambient Occlusion.
 4. Regola intensità e contrasto.
