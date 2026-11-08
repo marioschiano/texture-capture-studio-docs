@@ -190,13 +190,13 @@ Trascina il cursore per confrontare la stessa texture prima e dopo **Clean Light
     <div class="sr-uv-compare__overlay">
       <img src="../images/clean-lighting-prima.png" alt="Texture di mattoni prima di Clean Lighting, con luce non uniforme" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
-    <span class="te-compare-label te-compare-label--before">Prima</span>
-    <span class="te-compare-label te-compare-label--after">Dopo</span>
+    <span class="te-compare-label te-compare-label--before sr-uv-compare__label--left">Prima</span>
+    <span class="te-compare-label te-compare-label--after sr-uv-compare__label--right">Dopo</span>
     <button class="sr-uv-compare__handle" type="button" role="slider" aria-label="Confronta prima e dopo Clean Lighting" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
 
-*Esempio dimostrativo: sorgente generata con IA; il risultato è stato elaborato con Clean Lighting 0.3.132. Ombre, alte luci e Light Balance sono impostati a 1, Preserve Detail a 0,75 e Light Scale a 100. Il risultato dipende dalla foto e dalle impostazioni.*
+*Esempio dimostrativo: la sorgente, a sinistra, è generata con IA; il risultato a destra è stato elaborato con Clean Lighting 0.3.132. L'ombra è attenuata, non rimossa completamente. Ombre, alte luci e Light Balance sono impostati a 1, Preserve Detail a 0,75 e Light Scale a 100. Il risultato dipende dalla foto e dalle impostazioni.*
 
 #### Ritocco manuale con il timbro
 
