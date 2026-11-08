@@ -27,6 +27,26 @@ plugins:
         - locale: it
           name: Italiano
           build: true
+          nav:
+            - Home: index.md
+            - Per iniziare:
+                - Installazione: installation.md
+                - Guida rapida: quick-start.md
+            - Workflow:
+                - Workflow completo: workflow.md
+                - Mappe PBR e displacement: pbr-maps.md
+                - Trim Sheet e Atlas: trim-atlas.md
+            - Avanzate:
+                - Impostazioni avanzate: advanced-settings.md
+                - Riferimento impostazioni: settings-reference.md
+                - Consigli export: export-tips.md
+                - Casi d'uso: use-cases.md
+            - Supporto:
+                - Changelog: changelog.md
+                - FAQ: faq.md
+                - Risoluzione problemi: troubleshooting.md
+                - Contatta il supporto: support.md
+                - Video tutorial: video-tutorials.md
           nav_translations:
             Home: Home
             Getting Started: Per iniziare
@@ -38,6 +58,11 @@ plugins:
             Trim Sheet and Atlas: Trim Sheet e Atlas
             Reference: Riferimento
             Export and Advanced: Export e Advanced
+            Advanced: Avanzate
+            Advanced Settings: Impostazioni avanzate
+            Settings Reference: Riferimento impostazioni
+            Export Tips: Consigli export
+            Use Cases: Casi d'uso
             Support: Supporto
             Changelog: Changelog
             FAQ: FAQ
@@ -56,6 +81,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/image-lightbox.js
+  - javascripts/uv-compare.js
 
 extra:
   alternate:

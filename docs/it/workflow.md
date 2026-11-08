@@ -180,6 +180,24 @@ Per la maschera, se non è già presente un **Image Editor**, aprine uno in Blen
 </div>
 </div>
 
+#### Confronto prima e dopo
+
+Trascina il cursore per confrontare la stessa texture prima e dopo **Clean Lighting**. Puoi muoverlo anche con le frecce della tastiera dopo averlo selezionato.
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../images/clean-lighting-dopo.png" alt="Texture di mattoni dopo Clean Lighting" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <div class="sr-uv-compare__overlay">
+      <img src="../images/clean-lighting-prima.png" alt="Texture di mattoni prima di Clean Lighting, con luce non uniforme" class="sr-uv-compare__top" loading="lazy" decoding="async">
+    </div>
+    <span class="te-compare-label te-compare-label--before">Prima</span>
+    <span class="te-compare-label te-compare-label--after">Dopo</span>
+    <button class="sr-uv-compare__handle" type="button" role="slider" aria-label="Confronta prima e dopo Clean Lighting" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+*Esempio dimostrativo: sorgente generata con IA; il risultato è stato elaborato con Clean Lighting 0.3.132. Ombre, alte luci e Light Balance sono impostati a 1, Preserve Detail a 0,75 e Light Scale a 100. Il risultato dipende dalla foto e dalle impostazioni.*
+
 #### Ritocco manuale con il timbro
 
 1. Seleziona la texture da ritoccare nella lista e premi **Edit with Clone**. L'addon crea una copia temporanea e la apre nell'Image Editor con lo strumento Clone.
@@ -227,4 +245,5 @@ Questi controlli lavorano su una singola texture; le opzioni per le fasce orizzo
 
 - [Mappe PBR e displacement](pbr-maps.md)
 - [Trim Sheet e Atlas](trim-atlas.md)
-- [Export e Advanced](export-advanced.md)
+- [Impostazioni avanzate](advanced-settings.md)
+- [Consigli export](export-tips.md)

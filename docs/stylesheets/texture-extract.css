@@ -55,6 +55,17 @@ html[lang="it"] .md-typeset h2 ~ h2 { border-top: 1px solid var(--te-border); pa
 .md-typeset .te-image-placeholder { display: flex; min-height: 150px; flex-direction: column; align-items: center; justify-content: center; gap: .45rem; margin: 1.5rem 0; padding: 1.5rem; border: 2px dashed var(--te-border); border-radius: 8px; background: var(--te-panel); text-align: center; }
 .md-typeset .te-image-placeholder strong { color: var(--te-accent); }
 .md-typeset .te-image-placeholder span { max-width: 42rem; opacity: .8; font-size: .9em; }
+.md-typeset .sr-uv-compare { max-width: 980px; margin: 1.5rem auto 2rem; }
+.sr-uv-compare__image { position: relative; overflow: hidden; border: 1px solid var(--te-border); border-radius: 8px; background: #25272e; isolation: isolate; touch-action: none; }
+.sr-uv-compare__base { display: block !important; width: 100% !important; height: auto !important; max-width: none !important; }
+.sr-uv-compare__overlay { position: absolute; inset: 0; overflow: hidden; z-index: 2; clip-path: inset(0 50% 0 0); }
+.sr-uv-compare__top { position: absolute !important; inset: 0 !important; width: 100%; max-width: none !important; height: 100% !important; object-fit: fill; }
+.sr-uv-compare__handle { position: absolute; top: 0; bottom: 0; left: 50%; z-index: 4; width: 3px; padding: 0; border: 0; background: #ff9f43; transform: translateX(-50%); cursor: ew-resize; touch-action: none; }
+.sr-uv-compare__handle span { position: absolute; top: 50%; left: 50%; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%; background: #202935; transform: translate(-50%, -50%); box-shadow: 0 2px 10px #0007; }
+.sr-uv-compare__handle span::after { content: ''; position: absolute; inset: 9px; border-radius: 50%; background: #ff9f43; }
+.sr-uv-compare__handle:focus-visible span { outline: 3px solid #ff9f43; outline-offset: 3px; }
+.te-compare-label { position: absolute; top: 12px; z-index: 3; padding: .35rem .65rem; border-radius: 4px; color: white; background: #14171ed9; font-weight: 700; pointer-events: none; }
+.te-compare-label--before { left: 12px; } .te-compare-label--after { right: 12px; }
 @media (max-width: 600px) { .md-typeset .te-ui-image { flex-basis: 100%; } }
 .sr-lightbox-trigger{cursor:zoom-in}
 html.sr-lightbox-open,body.sr-lightbox-open{overflow:hidden;height:100%;overscroll-behavior:none} .sr-lightbox{touch-action:none}
