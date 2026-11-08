@@ -5,7 +5,23 @@ Texture Capture Studio può ricavare quattro mappe di supporto dalla texture Bas
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-Apri **4. Generate PBR**, premi **Enable PBR Generation** e scegli le mappe da generare. I gruppi **Normal / Height** e **Surface** regolano il risultato; in basso trovi anche i controlli per il displacement. Nella schermata i controlli sono disattivati perché la generazione non è ancora stata abilitata.
+Nella schermata i controlli sono disattivati perché la generazione non è ancora stata abilitata.
+
+- **Enable PBR Generation**: abilita o disabilita i controlli di generazione.
+- **Normal, Height, Roughness, Ambient Occlusion**: selezionano le mappe da produrre.
+- **Normal Strength**: regola l'intensità della Normal map.
+- **Height Strength / Height Contrast**: regolano intensità e contrasto della mappa di altezza.
+- **Roughness Strength / Roughness Contrast**: regolano intensità e contrasto delle variazioni di rugosità.
+- **AO Strength / AO Contrast**: regolano intensità e contrasto dell'occlusione stimata.
+- **Detail Radius**: imposta la scala del dettaglio locale analizzato.
+- **Generate Selected**: genera le mappe abilitate per la texture selezionata.
+- **Generate All**: le genera per tutte le texture estratte.
+- **Subdivision Levels**: imposta i livelli di suddivisione per il displacement; valori alti aumentano molto la geometria.
+- **Displacement Strength**: imposta l'intensità dello spostamento della superficie.
+- **Midlevel**: indica il valore della Height map che non produce spostamento; normalmente 0,5.
+- **Apply Height Displacement**: applica la configurazione alla mesh texturizzata selezionata.
+
+Le righe informative spiegano che il materiale e le mappe vengono generati dai pixel della texture e che bisogna selezionare la mesh prima del displacement.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -53,3 +69,6 @@ Su un muro di mattoni, mattoni e fughe possono acquistare una profondità visibi
 ## Coerenza di Trim e Atlas
 
 Quando le mappe PBR esistono, i nuovi Trim Sheet e Atlas riutilizzano lo stesso layout per Base Color, Normal, Height, Roughness e AO. Tutte le mappe restano così allineate alle stesse coordinate UV.
+
+!!! info "Immagine da aggiungere — mappe PBR"
+    Inserire un esempio reale della stessa texture con Base Color, Normal, Height, Roughness e AO generate dall'addon, etichettate e affiancate.

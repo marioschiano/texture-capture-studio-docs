@@ -5,7 +5,15 @@
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-In **7. Export** scegli il formato e le opzioni del preset. Nella schermata è selezionato **FBX**: puoi esportare gli oggetti selezionati, applicare i modificatori e gestire triangolazione e trasformazioni.
+- **Format**: sceglie FBX, OBJ o GLB; le opzioni cambiano in base al formato.
+- **Selected Objects Only**: esporta solo gli oggetti selezionati.
+- **Apply Modifiers**: esporta il risultato dei modificatori applicabili.
+- **Triangulate Meshes**: esporta le facce triangolate quando l'opzione è disponibile.
+- **Apply Transform**: controlla la trasformazione degli assi nell'export FBX.
+- **Apply Unit**: applica la conversione delle unità di scena nell'export FBX.
+- **Export FBX**: avvia l'esportazione nel formato selezionato; il nome del pulsante cambia con il formato.
+
+Le righe **Axes** e le altre informazioni descrivono assi e comportamento dell'esportazione: non sono controlli modificabili.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -30,7 +38,25 @@ Animazioni, camere, luci e armature sono escluse da questo workflow per mesh sta
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-La prima parte di **8. Advanced** raccoglie i controlli per le guide prospettiche, la vista della camera e l'aspetto dei vertici e dei poligoni. La dimensione dei punti può essere regolata in pixel sullo schermo oppure rispetto al mondo 3D.
+- **Perspective Mode**: sceglie la ricostruzione a due o tre punti di fuga.
+- **Sensor Width (mm)**: converte la focale stimata da pixel a millimetri; non regola velocità o campo visivo risolto.
+- **Guide Thickness**: imposta lo spessore visivo delle linee guida.
+- **Guide Label Size**: cambia la dimensione delle etichette delle guide, come X1 e Y1.
+- **Lock Camera View**: attiva la vista di lavoro sulla foto; disattivalo per navigare normalmente nella viewport.
+- **Photo as Camera Background**: mostra la foto come sfondo della vista camera, conservando un riferimento interno per la cattura.
+- **Show Vertex Dots**: mostra o nasconde i pallini sui vertici.
+- **Vertex Dot Color**: sceglie il colore dei pallini.
+- **Dot Opacity**: regola l'opacità dei pallini.
+- **Dot Size Mode**: sceglie se usare pixel dello schermo o dimensione nel mondo 3D.
+- **Vertex Dot Size**: regola la dimensione dei pallini in pixel nella modalità schermo.
+- **World Dot Size**: regola il diametro nel mondo 3D quando è selezionata la relativa modalità; la grandezza apparente varia con la distanza.
+- **Polygon Fill Color**: sceglie il colore del riempimento dei poligoni.
+- **Polygon Fill Opacity**: regola l'opacità del riempimento ordinario.
+- **Selected Polygon Opacity**: regola l'opacità evidenziata del poligono selezionato.
+- **Perspective Guide Opacity**: regola la visibilità delle guide prospettiche colorate.
+- **Show 3D Cursor**: mostra o nasconde il cursore 3D durante il lavoro sulla foto.
+- **Automatic Edit Points**: permette di avvicinarsi ai punti di guide o selezioni e cliccare per modificarli direttamente.
+- **Purge Unused**: pulisce i dati dell'addon non più collegati, preservando i file su disco.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -43,7 +69,19 @@ La prima parte di **8. Advanced** raccoglie i controlli per le guide prospettich
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-Nella parte successiva trovi **Snapping**, la sensibilità di **Automatic Guides** e il **Precision Magnifier**. Puoi abilitare separatamente gli agganci e modificarne le distanze; lo zoom di precisione dispone di ingrandimento, rallentamento, mirino e griglia pixel.
+- **Enable Vertex Snapping**: aggancia i punti ai vertici vicini dei poligoni.
+- **Enable Edge Snapping**: aggancia un punto ai bordi vicini dei poligoni.
+- **Snap Perspective Guide Points**: aggancia le estremità delle guide ai punti guida vicini.
+- **Snap Distance (px)**: distanza massima, in pixel della viewport, per l'aggancio dei punti.
+- **Geometry Snap Distance (px)**: distanza massima per agganciare un nuovo piano prospettico a vertici o bordi di geometrie esistenti.
+- **Auto Guide Sensitivity**: aumenta o riduce la sensibilità del rilevamento automatico; valori maggiori includono anche bordi meno marcati.
+- **Enable Precision Magnifier**: mostra o nasconde la lente di precisione durante il posizionamento.
+- **Magnifier Zoom**: ingrandimento dell'immagine nella lente.
+- **Cursor Slowdown**: rallenta il cursore per posizionamenti più precisi; 1 corrisponde alla velocità normale.
+- **Magnifier Size**: dimensione della lente, in pixel.
+- **Show Crosshair**: mostra il mirino sulla posizione esatta.
+- **Show Pixel Grid**: mostra la griglia dei pixel sorgente nella lente.
+- **Reset Defaults**: ripristina i valori predefiniti delle impostazioni gestite dall'addon.
 
 </div>
 <div class="te-ui-image" markdown="1">

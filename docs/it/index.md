@@ -6,12 +6,28 @@ Estrai texture ad alta risoluzione direttamente dalle fotografie, correggi la pr
 
 <div class="te-flow">Foto sorgente → Match Perspective → Estrazione → PBR → Trim / Atlas → Export</div>
 
+![Illustrazione concettuale: selezione prospettica di un muro e texture rettangolare raddrizzata](images/cattura-concettuale.png)
+
+*Illustrazione concettuale generata con IA: mostra l'obiettivo della cattura, non un risultato misurato o una schermata di Blender.*
+
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
 ## Il pannello dell'addon
 
 Nella viewport 3D premi **N** e apri **Texture Capture Studio**. Le sezioni seguono le fasi del lavoro: puoi aprire solo quelle che ti servono. Clicca sulle immagini di questa guida per ingrandirle.
+
+- **1. Source Photo**: carica o rimuove la fotografia sorgente.
+- **2. Match Perspective**: imposta le guide e ricostruisce la prospettiva per creare geometria allineata.
+- **3. Capture**: seleziona aree della foto, estrae texture e gestisce i poligoni.
+- **4. Generate PBR**: genera mappe derivate e configura il displacement.
+- **5. Trim Sheet**: compone le texture in fasce, anche ripetibili orizzontalmente.
+- **6. Atlas**: organizza più regioni in una texture condivisa.
+- **7. Export**: esporta la geometria nei formati disponibili.
+- **8. Advanced**: raccoglie le impostazioni di guide, visualizzazione, snapping e lente di precisione.
+- **Reset Defaults**: ripristina i valori predefiniti delle impostazioni gestite dall'addon.
+
+La freccia a sinistra di ogni titolo apre o chiude la sezione.
 
 </div>
 <div class="te-ui-image" markdown="1">

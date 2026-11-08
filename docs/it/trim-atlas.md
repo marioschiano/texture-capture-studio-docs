@@ -7,7 +7,20 @@ La sezione **5. Trim Sheet** combina le texture estratte in un'unica immagine. D
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-Con **Horizontal Bands · Full Width 0–1** attivo, scegli la larghezza e le texture, quindi regola **Make Seamless X**. L'anteprima mostra la ripetizione; **Build Trim Sheet** genera il risultato nella cartella indicata. Nella schermata non ci sono ancora texture nella lista.
+- **Horizontal Bands · Full Width 0–1**: attiva le fasce orizzontali estese su tutta la larghezza UV.
+- **Sheet Width (px)**: larghezza finale; con 0 usa la larghezza della sorgente più ampia.
+- **Make Seamless X**: sfuma le giunzioni sinistra/destra delle fasce senza modificare gli originali.
+- **Seamless Method**: sceglie **Edge Blend** o **Mirror & Blend**.
+- **Edge Blend Width**: controlla quanto è ampia l'area di sfumatura.
+- **Textures to include**: consente di scegliere le texture estratte da includere; nello screenshot la lista è vuota.
+- **Create Live Seamless Preview**: confronta prima e dopo con tre ripetizioni orizzontali.
+- **Live Preview**, dopo la creazione dell'anteprima: abilita l'aggiornamento delle modifiche.
+- **Trim Padding**: imposta il margine in pixel tra le fasce.
+- **Output Folder** e pulsante cartella: scelgono la destinazione del risultato.
+- **Texture Name**: imposta il nome base della trim.
+- **Build Trim Sheet**: crea e salva la composizione definitiva.
+
+Le righe con l'icona informativa descrivono i valori e l'anteprima: non sono pulsanti.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -41,6 +54,9 @@ Attiva **Make Seamless X** per sfumare la giunzione tra il bordo sinistro e quel
 
 Premi **Create Live Seamless Preview** per confrontare le fasce ripetute tre volte: **prima** in alto e **dopo** in basso. Dopo aver creato l'anteprima, il controllo **Live Preview** permette di aggiornare il confronto quando cambi le impostazioni. Controlla visivamente la giunzione: a seconda della foto possono restare ripetizioni evidenti, ombre o discontinuità.
 
+!!! info "Immagine da aggiungere — anteprima seamless"
+    Inserire una schermata reale dell'anteprima con le tre ripetizioni prima e dopo la sfumatura, evidenziando le giunzioni.
+
 L'anteprima serve per la verifica: premi comunque **Build Trim Sheet** per generare la trim definitiva nella cartella di output. Se esistono le corrispondenti mappe PBR, i risultati usano lo stesso layout della Base Color.
 
 !!! note
@@ -55,7 +71,15 @@ Disattiva **Horizontal Bands · Full Width 0–1** per usare la composizione pre
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-Nel pannello **6. Atlas** scegli tra **Automatic — Preserve Resolution** e **Manual Grid**. La modalità automatica offre controlli per padding, dimensione massima, rotazione delle isole e bake della Base Color.
+- **Automatic — Preserve Resolution**: organizza le isole delle mesh selezionate senza ridimensionare le regioni sorgenti.
+- **Manual Grid**: passa alla composizione tramite celle e colonne fisse.
+- **Atlas Padding**: imposta lo spazio attorno alle regioni impacchettate.
+- **Maximum Atlas Size**: limite della dimensione dell'atlas automatico; le regioni non vengono ridotte per farle entrare.
+- **Allow 90° Rotation**: permette di ruotare le isole complete per migliorare il packing.
+- **Bake Base Color After Packing**: esegue il bake della Base Color sull'atlas dopo il packing.
+- **Build Automatic Atlas**: crea l'atlas automatico a partire dalle mesh selezionate e dalle loro UV attive.
+
+I messaggi in basso descrivono i requisiti e indicano che viene creata una nuova copia, lasciando gli originali intatti.
 
 </div>
 <div class="te-ui-image" markdown="1">

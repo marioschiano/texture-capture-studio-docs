@@ -7,7 +7,10 @@ Questa guida descrive il workflow di Texture Capture Studio; le schermate dell'i
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-**Load Photo** apre la scelta dell'immagine sorgente. Una volta caricata, la foto diventa il riferimento per la cattura e per l'eventuale ricostruzione prospettica.
+- **Load Photo**: apre il selettore per caricare la fotografia originale da cui estrarre le texture.
+- **Freccia della sezione**: apre o chiude Source Photo senza eliminare la foto.
+
+La schermata mostra lo stato iniziale. Dopo il caricamento compaiono il nome della foto e il relativo cestino per rimuoverla.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -26,7 +29,11 @@ La cattura usa l'immagine originale, non la risoluzione dello schermo. La dimens
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-**Enable Perspective Match** attiva i controlli per disegnare le guide. Carica prima una fotografia: la schermata a destra mostra lo stato iniziale, quando non è ancora stata scelta.
+- **Enable Perspective Match**: attiva o disattiva il workflow di ricostruzione prospettica e mostra i controlli per le guide.
+- **Messaggio informativo**: segnala che devi caricare una foto prima di disegnare le guide; non è un pulsante.
+- **Freccia della sezione**: apre o chiude il pannello.
+
+La schermata mostra lo stato iniziale, senza foto; le guide e i pulsanti di solve compaiono proseguendo nel workflow descritto sotto.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -50,6 +57,9 @@ Usa questa fase se vuoi ricostruire la prospettiva della foto per modellare geom
 
 **Auto Detect Guides** propone un posizionamento automatico: verifica sempre le linee sulla foto e correggile prima del solve. Per ripartire usa **Clear All Guides**.
 
+!!! info "Immagine da aggiungere — guide sulla foto"
+    Inserire una schermata reale di Blender con una foto caricata, le due guide X, le due Y e le due Z visibili, insieme ai controlli di Match Perspective aperti.
+
 In **Advanced → Perspective Mode**, **2-Point Perspective** è il valore predefinito ed è adatto a foto con verticali approssimativamente parallele. **3-Point Perspective** considera anche la convergenza verticale: usa due linee per ciascuno degli assi X, Y e Z. Tre punti di fuga non significano tre linee per asse.
 
 ### Perspective Geometry
@@ -63,7 +73,19 @@ La precisione della ricostruzione dipende dalla qualità delle guide e dalle ipo
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-Nella modalità **Texture**, **New Points** avvia la selezione e **Edit Points** permette di correggerla. Più in basso scegli metodo, proporzioni, cartella e nome, poi premi **Extract Perspective Texture**. La schermata mostra il pannello prima di caricare una foto: alcuni messaggi sono abbreviati per la larghezza della sidebar.
+- **Texture / Polygons**: alterna la cattura di aree alla gestione dei poligoni e al trasferimento sulle facce compatibili.
+- **New Points**: avvia una nuova selezione sulla foto.
+- **Edit Points**: permette di correggere i punti della selezione.
+- **Cestino accanto ai punti**: cancella la selezione corrente.
+- **Aligned Rectangle**: definisce un rettangolo allineato alla foto tramite due angoli; tieni premuto Shift per un quadrato.
+- **Extraction Method**: sceglie come trasformare l'area selezionata; i tre metodi sono confrontati sotto.
+- **Target UV Ratio**: sceglie come determinare il rapporto larghezza/altezza del risultato.
+- **Output Folder** e pulsante cartella: impostano la destinazione dei file estratti.
+- **Texture Name**: imposta il nome base dei risultati.
+- **Extract Perspective Texture**: estrae la selezione corrente dalla foto.
+- **Extract Selected Polygon / Extract All Polygons**: estraggono rispettivamente il poligono selezionato o tutti quelli disponibili per la foto.
+
+Le righe con icona informativa sono messaggi di stato, non pulsanti. La schermata mostra l'interfaccia senza una foto caricata; alcuni testi sono abbreviati dalla larghezza della sidebar.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -106,12 +128,20 @@ La sezione **Polygons** gestisce i poligoni e il trasferimento sulle facce di ge
 
 Per un cubo Blender standard l'addon applica la scala e crea una mappa UV **Photo Transfer** per la proiezione. Verifica il risultato e le facce opposte: la foto contiene solo le informazioni effettivamente visibili, quindi non può ricostruire automaticamente il retro nascosto.
 
+!!! info "Immagine da aggiungere — trasferimento su cubo"
+    Inserire un confronto reale prima/dopo: cubo allineato alla foto e risultato sulle facce visibili, con il pannello Capture → Polygons aperto.
+
 ## Extracted Textures e Make Seamless
 
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-La lista raccoglie le texture estratte; i pulsanti laterali aiutano a eliminare o gestire i risultati. **Purge Unused Generated Data** pulisce i dati generati non più utilizzati, senza eliminare i file salvati su disco.
+- **Lista**: raccoglie le texture estratte e consente di selezionare quella su cui lavorare; nello screenshot è vuota.
+- **Occhio sulla riga**, quando disponibile: mostra o nasconde l'anteprima della texture.
+- **Cestino laterale**: elimina la texture selezionata dall'addon.
+- **X laterale**: svuota la lista delle texture estratte.
+- **Icona Purge** e **Purge Unused Generated Data**: rimuovono i dati generati dall'addon che non sono più collegati; i file sul disco vengono conservati.
+- **Messaggio informativo**: ricorda il comportamento della pulizia; non è cliccabile.
 
 </div>
 <div class="te-ui-image" markdown="1">
@@ -124,7 +154,17 @@ La lista raccoglie le texture estratte; i pulsanti laterali aiutano a eliminare 
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
 
-In **Make Seamless** regoli la sfumatura, il rumore e la deformazione. Avvia l'anteprima, controlla la ripetizione e, quando il risultato ti convince, esegui il bake. **Preview 3 x 3** aiuta a individuare le giunzioni.
+- **Edge Blend Width**: ampiezza della zona di sfumatura ai bordi.
+- **Noise Scale**: scala del rumore usato per rendere meno uniforme la transizione.
+- **Warp Strength**: intensità della deformazione applicata alla transizione; valori più alti possono alterare di più il dettaglio.
+- **Seed**: cambia la variazione casuale del rumore.
+- **Sharpen**: aumenta la nitidezza del dettaglio locale nel risultato.
+- **Create Live Seamless Preview**: crea un'anteprima del risultato modificabile.
+- **Quick Edge Blend**: crea rapidamente una copia con i bordi sfumati.
+- **Preview 3 x 3**: mostra la ripetizione per individuare le giunzioni.
+- **Create Material From Selected**: crea un materiale usando la texture selezionata.
+
+Dopo aver creato l'anteprima compaiono anche **Edit Mask in Image Editor** e **Bake Seamless Texture**. Il messaggio ricorda che viene creata una copia e che le eventuali mappe PBR vanno rigenerate per il risultato.
 
 </div>
 <div class="te-ui-image" markdown="1">
