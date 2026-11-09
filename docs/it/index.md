@@ -1,6 +1,6 @@
 # Texture Capture Studio
 
-<span class="te-draft">Bozza documentazione</span>
+Guida italiana per **Texture Capture Studio 0.3.132**.
 
 Estrai texture ad alta risoluzione direttamente dalle fotografie, correggi la prospettiva, genera mappe PBR e crea Trim Sheet o Atlas allineati in Blender.
 
@@ -50,6 +50,7 @@ Se un muro occupa 2200 × 1600 pixel in una foto da 8000 × 6000, la texture est
 - Estrazione con quattro punti tramite correzione prospettica, proiezione tessellata o proiezione dalla camera.
 - Creazione di box e piani prospettici e trasferimento della foto alle facce compatibili, anche di un cubo Blender.
 - Gestione di più poligoni e texture estratte.
+- Correzione dell'illuminazione con **Clean Lighting** e ritocco manuale con **Advanced Retouch**.
 - Generazione PBR: Normal, Height, Roughness e Ambient Occlusion.
 - Displacement dalla Height map con configurazione automatica di suddivisione e modificatore Displace.
 - Trim Sheet con fasce orizzontali U 0–1, seamless e anteprima della ripetizione; è disponibile anche la composizione precedente.

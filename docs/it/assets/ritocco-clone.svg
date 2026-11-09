@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="290" viewBox="0 0 760 290" role="img" aria-labelledby="title desc">
+<title id="title">Ritocco Clone nell’Image Editor</title>
+<desc id="desc">Il tasto destro sposta la sorgente del clone, il sinistro dipinge nella destinazione, e Save Retouched Texture salva una nuova texture.</desc>
+<rect width="760" height="290" rx="16" fill="#1b2230"/>
+<g font-family="system-ui, sans-serif" fill="#f1f5f9">
+<text x="26" y="40" font-size="23" font-weight="700">Ritocco Clone nell’Image Editor</text>
+<g fill="#293347"><rect x="24" y="63" width="712" height="58" rx="9"/><rect x="24" y="130" width="712" height="58" rx="9"/><rect x="24" y="197" width="712" height="58" rx="9"/></g>
+<g fill="#fdba74"><circle cx="54" cy="92" r="14"/><circle cx="54" cy="159" r="14"/><circle cx="54" cy="226" r="14"/></g>
+<g fill="#18212e" font-size="15" font-weight="700" text-anchor="middle"><text x="54" y="97">1</text><text x="54" y="164">2</text><text x="54" y="231">3</text></g>
+<g font-size="17" font-weight="700"><text x="80" y="88">Tasto destro</text><text x="80" y="155">Tasto sinistro</text><text x="80" y="222">Save Retouched Texture</text></g>
+<g fill="#d2dcea" font-size="15"><text x="80" y="109">Sposta il punto sorgente del clone.</text><text x="80" y="176">Dipingi sulla zona da correggere.</text><text x="80" y="243">Salva una nuova texture dalla scheda Texture Capture Studio.</text></g>
+</g></svg>

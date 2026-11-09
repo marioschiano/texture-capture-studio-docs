@@ -206,7 +206,7 @@ Trascina il cursore per confrontare la stessa texture prima e dopo **Clean Light
 
 Salva prima di chiudere Blender o cambiare file: la copia di lavoro è temporanea. L'originale rimane invariato. Se avevi già generato mappe PBR, rigenerale dalla texture ritoccata per mantenerle coerenti. Puoi poi controllare il risultato con **Make Seamless**.
 
-<div class="te-image-placeholder"><strong>Immagine da aggiungere: ritocco con Clone</strong><span>Schermata reale dell'Image Editor con il timbro, la sorgente di clonazione e il pannello Save Retouched Texture / Cancel Retouch.</span></div>
+![Schema dei comandi del pennello Clone e del salvataggio della copia](assets/ritocco-clone.svg)
 
 <div class="te-ui-row" markdown="1">
 <div class="te-ui-text" markdown="1">
