@@ -45,6 +45,10 @@ La schermata mostra lo stato iniziale, senza foto; le guide e i pulsanti di solv
 
 Usa questa fase se vuoi ricostruire la prospettiva della foto per modellare geometrie allineate o stimare le proporzioni di una superficie. Non è necessaria per una semplice cattura 2D.
 
+![Illustrazione del posizionamento delle guide X, Y e Z e del volume prospettico](images/Casa%20con%20linee%20guida%20prospettiche.png)
+
+*Illustrazione concettuale generata con IA: le guide e il volume mostrano il principio del Perspective Match, non una schermata dell'addon.*
+
 ![Schema delle guide X, Y e Z su un edificio](images/guide-prospettiche.svg)
 
 *Schema illustrativo: le guide dello stesso colore seguono bordi paralleli nel mondo reale, non necessariamente paralleli nella foto.*
