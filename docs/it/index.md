@@ -6,7 +6,7 @@ Estrai texture ad alta risoluzione direttamente dalle fotografie, correggi la pr
 
 <div class="te-flow">Foto sorgente → Match Perspective → Estrazione → PBR → Trim / Atlas → Export</div>
 
-![Illustrazione concettuale: selezione prospettica di un muro e texture rettangolare raddrizzata](images/cattura-concettuale.png)
+![Dalla fotografia alla texture corretta, ripetuta e alle mappe PBR](images/Dalla%20foto%20alla%20texture%20perfetta.png)
 
 *Illustrazione concettuale generata con IA: mostra l'obiettivo della cattura, non un risultato misurato o una schermata di Blender.*
 
